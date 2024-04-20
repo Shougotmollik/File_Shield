@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:file_shield/Pages/WelcomePage/welcome_screen.dart';
+import 'package:file_shield/Screens/WelcomeScreen/welcome_screen.dart';
 import 'package:file_shield/Utils/config.dart';
 import 'package:file_shield/Utils/images.dart';
 import 'package:flutter/material.dart';
