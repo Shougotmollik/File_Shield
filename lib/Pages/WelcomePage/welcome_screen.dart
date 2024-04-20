@@ -111,7 +111,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   Get.defaultDialog(
                     title:
                         "If disagree, your will not able to use ${AppConfig.appName} ",
-                    backgroundColor: Theme.of(context).colorScheme.background,
+                    backgroundColor: Colors.black,
                   );
                 },
               ),
