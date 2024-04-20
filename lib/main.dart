@@ -1,4 +1,4 @@
-import 'package:file_shield/Pages/SplashPage/splash_screen.dart';
+import 'package:file_shield/Screens/SplashScreen/splash_screen.dart';
 import 'package:file_shield/Utils/Theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
