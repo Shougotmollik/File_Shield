@@ -31,7 +31,7 @@ class AppTheme {
       brightness: Brightness.dark,
       primary: AppColors.primaryColor,
       onPrimary: AppColors.whiteColor,
-      secondary: AppColors.lightBackgroundColor,
+      secondary: AppColors.secondaryColor,
       onSecondary: AppColors.onPrimaryColor,
       error: AppColors.redColor,
       onError: AppColors.whiteColor,
