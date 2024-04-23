@@ -1,4 +1,4 @@
-import 'package:file_shield/Screens/SplashScreen/splash_screen.dart';
+import 'package:file_shield/Screens/AuthScreen/login_screen.dart';
 import 'package:file_shield/Utils/Theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const SplashScreen(),
+      home: const LoginScreen(),
     );
   }
 }
