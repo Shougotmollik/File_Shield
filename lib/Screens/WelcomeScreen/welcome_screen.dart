@@ -104,7 +104,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               const SizedBox(height: 18),
               CustomButton(
                 btnText: "Agree & Continue",
-                onTap: () {},
+                onTap: () {
+                  Get.offAll(const CalculatorScreen());
+                },
               ),
               const SizedBox(height: 8.0),
               CustomButton(
