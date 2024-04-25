@@ -76,16 +76,13 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                             ? const SizedBox()
                             : Container(
                                 decoration: BoxDecoration(
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .primary
-                                        .withOpacity(0.9),
+                                    color: controller.getButtonBgColor(button),
                                     borderRadius: BorderRadius.circular(16.0),
                                     border: Border(
                                       top: BorderSide(
                                         color: Theme.of(context)
                                             .colorScheme
-                                            .onPrimary,
+                                            .primary,
                                         width: 1.5,
                                       ),
                                     ),
@@ -95,13 +92,15 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                                             .colorScheme
                                             .onPrimary,
                                         spreadRadius: .075,
-                                        blurRadius: 0.5,
+                                        blurRadius: 0.7,
                                       )
                                     ]),
                                 child: Center(
                                     child: Text(
                                   button,
-                                  style: const TextStyle(
+                                  style: TextStyle(
+                                    color:
+                                        controller.getButtonTextColor(button),
                                     fontSize: 38,
                                     fontWeight: FontWeight.bold,
                                   ),
