@@ -1,3 +1,5 @@
+import 'package:file_shield/Utils/colors.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CalculatorController extends GetxController {
@@ -23,4 +25,25 @@ class CalculatorController extends GetxController {
     '=',
     '+',
   ];
+
+  Color getButtonTextColor(String text) {
+    if (text == 'AC' ||
+        text == 'C' ||
+        text == '/' ||
+        text == '*' ||
+        text == '-' ||
+        text == '+') {
+      return AppColors.primaryColor;
+    } else {
+      return AppColors.onPrimaryColor;
+    }
+  }
+
+  Color getButtonBgColor(String text) {
+    if (text == '=') {
+      return AppColors.primaryColor;
+    } else {
+      return AppColors.lightBackgroundColor.withOpacity(.80);
+    }
+  }
 }
